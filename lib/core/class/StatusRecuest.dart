@@ -1,0 +1,15 @@
+enum StatusRecuest {
+  none,
+  loading,
+  success,
+  failure,
+  offlineFailure,
+  serverFailure,
+  serverException,
+  unauthorized,
+  forbidden,
+  notFound,
+  conflict,
+  internalServerError,
+  badRequest,
+}
