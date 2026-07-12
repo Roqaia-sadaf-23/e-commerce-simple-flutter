@@ -6,17 +6,18 @@ import 'package:testproject/core/localization/changelocal.dart';
 import 'package:testproject/core/localization/translation.dart';
 import 'package:testproject/core/services/serveses.dart';
 
- void main() async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initialServices();  
+
+  await initialServices();
   await Get.putAsync<Myservices>(() async => await Myservices().init());
 
-//Get.put(FavoriteController());
- //Get.put(crud());  
-  runApp(MyApp());   
+  //Get.put(FavoriteController());
+  //Get.put(crud());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget { 
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your1 application.+
@@ -24,19 +25,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     localController controllerlang = Get.put(localController());
     return GetMaterialApp(
-      translations: MyTranslation(),  
-      debugShowCheckedModeBanner: false, 
+      translations: MyTranslation(),
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       locale: controllerlang.languege,
-      theme: controllerlang.Apptheme,   
+      theme: controllerlang.Apptheme,
 
       initialBinding: initialBinding(),
 
       // theme:
- // home: testview(), 
-      //routes: routes,.3 
+      // home: testview(),
+      //routes: routes,.3
       getPages: routes,
     );
   }
-}  
-    
+}

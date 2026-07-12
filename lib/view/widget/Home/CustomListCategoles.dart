@@ -25,13 +25,15 @@ class Customlistcategoles extends GetView<HomeControllerImp> {
 
           return InkWell(
             onTap: () {
-              controller.Gotoitmes(controller.Categorydata,index, iditem);
+              controller.Gotoitmes(controller.Categorydata, index, iditem);
             },
             child: Column(
               children: [
-                Container(
+                AnimatedContainer(
+                  curve: Curves.easeInOut,
                   margin: EdgeInsets.symmetric(horizontal: 8),
                   padding: EdgeInsets.all(8),
+                  duration: Duration(seconds: 4),
                   decoration: BoxDecoration(
                     color: Appcolor.babybluecolor,
                     borderRadius: BorderRadius.circular(12),

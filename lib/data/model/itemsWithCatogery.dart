@@ -9,7 +9,7 @@ class ItemsWModel {
   final String? itemsImagePath;
   final String itemsDate;
   final int categorlesId;
-  final int ?favorite;
+  final int? favorite;
   final String categorlesName;
   final String categorlesImagePath;
   final String categorlesDate;
@@ -49,9 +49,10 @@ class ItemsWModel {
       categorlesName: json['categorles_name'] ?? '',
       categorlesImagePath: json['categorles_ImagePath'] ?? '',
       categorlesDate: json['categorles_date'] ?? '',
-      priceAfterDescount: json['priceafterdescount'] != null
-          ? (json['priceafterdescount'] as num).toDouble()
-          : null,
+      priceAfterDescount:
+          json['priceafterdescount'] != null
+              ? (json['priceafterdescount'] as num).toDouble()
+              : null,
     );
   }
 }

@@ -1,8 +1,7 @@
 class Applinkapi {
-  static const String publicApiLink="http://192.168.8.108:5090/api";
+  static const String publicApiLink = "http://192.168.8.4:5090/api";
   static const String server = "$publicApiLink/eccomerce";
-  static const String getimageStatic =
-      "$publicApiLink/Images/GetImage";
+  static const String getimageStatic = "$publicApiLink/Images/GetImage";
   static const String AllCat = "$publicApiLink/Categorles";
   static const String StaticItems = "$publicApiLink/Items";
   //static const String staticfavorite = "$publicApiLink/Favorete/delete/favoriteid";
@@ -22,7 +21,6 @@ static const String imageItems ="";
   //===========================ForgetPassword===========================
   static const String ResetPassword = "$server/ResetPassword";
 
-
   //Categorles
   static const String CategorlesData = "$AllCat/AllCategorles";
   //Items
@@ -31,12 +29,13 @@ static const String imageItems ="";
   static const String GetAllcateforyItemswithdescount =
       "$StaticItems/AllItemsWithDescount";
   static const String GetItemsByCategoryId = "$StaticItems/category";
-// حذف عبر  // 
-// =====================================Favorite========
-// favoriteID
-static const String FavoriteDeleteByFavoriteID = "$publicApiLink/Favorete/delete/favoriteid";
-// حذف عبر item + user
-static const String FavoriteDeleteByItemUser = "$publicApiLink/delete/item";
+  // حذف عبر  //
+  // =====================================Favorite========
+  // favoriteID
+  static const String FavoriteDeleteByFavoriteID =
+      "$publicApiLink/Favorete/delete/favoriteid";
+  // حذف عبر item + user
+  static const String FavoriteDeleteByItemUser = "$publicApiLink/delete/item";
 
   static const String FavoriteAdd = "$publicApiLink/Favorete/Add";
 
@@ -53,8 +52,7 @@ static const String FavoriteDeleteByItemUser = "$publicApiLink/delete/item";
 
   //search
 
-    static const String search = "$StaticItems/FelterItemName";
-
+  static const String search = "$StaticItems/FelterItemName";
 }
 
 //http://192.168.8.145:5090/api/Items/FelterItemName/

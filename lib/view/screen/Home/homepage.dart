@@ -19,7 +19,7 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(HomeControllerImp());
-Get.put(FavoriteControllerim());
+    Get.put(FavoriteControllerim());
 
     return GetBuilder<HomeControllerImp>(
       builder:
@@ -90,7 +90,8 @@ class ListitemSearch extends GetView<HomeControllerImp> {
           child: Container(
             margin: EdgeInsets.symmetric(vertical: 20),
             child: Card(
-              child: Container(
+              child: AnimatedContainer(
+                duration: Duration(seconds: 1),
                 padding: EdgeInsets.all(10),
                 child: Row(
                   children: [
