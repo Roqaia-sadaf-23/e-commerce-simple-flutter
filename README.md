@@ -1,16 +1,70 @@
-# testproject
+# 🛒 E-Commerce Backend API
 
-A new Flutter project.
+A RESTful E-Commerce Backend API built with **ASP.NET Core** and **C#**.
 
-## Getting Started
+The project provides backend functionality for an e-commerce application, including product management, categories, shopping cart, favorites, addresses, and image handling.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📌 About the Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project was created to practice building a real-world backend using ASP.NET Core Web API.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It provides APIs that can be consumed by mobile applications, web applications, or other frontend clients.
+
+The backend handles the main operations required in a simple e-commerce system such as:
+
+- Browsing products
+- Managing categories
+- Adding products to the cart
+- Managing favorite products
+- Managing user addresses
+- Handling product images
+
+---
+
+## ✨ Features
+
+- 🛍️ Product / Item Management
+- 📂 Category Management
+- 🛒 Shopping Cart
+- ❤️ Favorite Products
+- 📍 Address Management
+- 🖼️ Image Handling
+- 🌐 RESTful API endpoints
+- ⚡ ASP.NET Core Web API
+
+---
+
+## 🛠️ Technologies Used
+
+- C#
+- ASP.NET Core
+- .NET
+- REST API
+- Visual Studio
+- Git
+- GitHub
+
+---
+
+## 📁 Project Structure
+
+```text
+ecommerce-backend/
+│
+├── Controllers/
+│   ├── AddressController.cs
+│   ├── CartController.cs
+│   ├── CategoriesController.cs
+│   ├── FavoriteController.cs
+│   ├── ImagesController.cs
+│   ├── ItemsController.cs
+│   └── ecommerceController.cs
+│
+├── Properties/
+│
+├── Program.cs
+├── ecommerce-backend.csproj
+├── ecommerce-backend.http
+└── ecommerce-backend.sln
